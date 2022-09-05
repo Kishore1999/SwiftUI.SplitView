@@ -4,14 +4,14 @@ import PackageDescription
 
 let package = Package(
     name: "SplitView",
-    platforms: [.macOS(.v12), .iOS(.v13)],
+    platforms: [.macOS(.v12), .iOS(.v15)],
     products: [
         .library(
             name: "SplitView",
             targets: ["SplitView"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/andtie/SequenceBuilder", from: "0.0.7"),
+        .package(url: "https://github.com/Kishore1999/SequenceBuilder", branch: "main")
     ],
     targets: [
         .target(
